@@ -1,61 +1,164 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio - Desenvolvedor Full Stack</title>
-
-    <link rel="stylesheet" href="style.css">
+    <title>Isabel Xavier Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 <body>
-    <div class="container">
-        
-            <h1 class="heading">Eleve seu negócio digital a outro nível <span class="highlight">com um Front-end de qualidade!</span></h1>
-            <p class="description">Desenvolvedor Full Stack | JavaScript, HTML, CSS</p> 
-        
-        
-        <!-- <p class="description">Olá! Sou Isabel Xavier, desenvolvedora Front-end com especialidade em React, HTML e CSS. Ajudo pequenos negócios e designers a colocarem em prática boas ideias. Vamos conversar?</p>-->
-        <!--<div class="buttons">
-            <a href="#" target="_blank">Instagram</a>
-            <a href="#" target="_blank">GitHub</a>
-           
-        </div>-->
-        <div class="profile-img">
-            <img src="foto1.jfif" alt="Isabel Xavier no laptop">
-        </div>
-        <nav class="buttons">
-            <ul>
-                <a href="#sobre" target="_blank">Sobre</a>
-                <a href="#projetos" target="_blank">Projetos</a>
-                <a href="#contato" target="_blank">Contato</a>
-            </ul>
-        </nav>    
-        
-    </div>
-    <section id="sobre">
+    <header>
+        <nav>
+            <div class="left">
+                <a href="#about-section">Isabel Xavier</a>
+            </div>
+            <div class="right">
+                <a href="#about-section">Sobre</a>
+                <a href="#projects-section">Projetos</a>
+                <a href="#skills-section">Habilidades</a>
+                <a href="#contact">Contato</a>
+            </div>
+        </nav>
+    </header>
+    <section id="about-section">
         <h2>Sobre Mim</h2>
-        <p>Sou um desenvolvedor full stack apaixonado por tecnologia e inovação. Tenho experiência em diversas tecnologias e frameworks modernos.</p>
+        <div class="headshot">
+            <picture>
+                <img src="images/head.jpg" alt="headshot">
+            </picture>
+        </div>
+        <div class="bio">
+            <p>
+                Sou graduada em Sistemas de Informação pela Faculdade 7 de Setembro (2014), 
+                com aperfeiçoamento em Engenharia de Software com ênfase em Padrões de Software pela Universidade Estadual do Ceará (UECE). 
+                Iniciei minha trajetória profissional como assistente de TI, evoluindo para analista de sistemas e 
+                posteriormente, para Desenvolvedor Full Stack Jr.
+            </p>
+            <br>
+        </div>
     </section>
-    <section id="projetos">
+    <section id="projects-section">
         <h2>Projetos</h2>
-        <div class="projeto">
-            <h3>Projeto 1</h3>
-            <p>Descrição breve do projeto.</p>
+        <div class="project-subsection">
+            <div #swiperRef="" class="swiper card-swiper">
+                <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <a href="https://github.com/stephanieran/floppy-fish" target="_blank" class="project-box">
+                        <picture>
+                            <img src="images/floppy-fish.png" alt="Floppy Fish">
+                        </picture>
+                        <h4>Floppy Fish</h4>
+                        <h5><em>Java</em></h5>
+                        <p>Floppy Fish is a spinoff of Flappy Bird built in Java. Instead of gravity pulling the bird down, the buoyancy of the water pushes the fish up.</p>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="https://github.com/stephanieran/circles" target="_blank" class="project-box">
+                        <picture>
+                            <img src="images/circles-1.png" alt="Circles">
+                        </picture>
+                        <h4>Circles</h4>
+                        <h5><em>Swift, Firebase</em></h5>
+                        <p>Circles is a photo sharing app with daily prompts to encourage small groups of families and friends to stay in touch.</p>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="https://github.com/stephanieran/github-issues" target="_blank" class="project-box">
+                        <picture>
+                            <img src="images/github issues.png" alt="Github Issues">
+                        </picture>
+                        <h4>Github Issues</h4>
+                        <h5><em>Swift, GitHub REST API</em></h5>
+                        <p>Github Issues is an iOS mobile application to streamline open/closed GitHub Issues posted in popular open-source repos for simple access.</p>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="https://github.com/stephanieran/chibi-luffy" target="_blank" class="project-box">
+                        <picture>
+                            <img src="images/chibi-luffy.png" alt="Chibi Luffy">
+                        </picture>
+                        <h4>Chibi Luffy</h4>
+                        <h5><em>Swift, GitHub REST API</em></h5>
+                        <p>Chibi Luffy is an Instagram bot that reposts anime memes scraped from Reddit.</p>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="https://github.com/stephanieran/functional-adventure" target="_blank" class="project-box">
+                        <picture>
+                            <img src="images/haskell-text-game.png" alt="Functional Adventure">
+                        </picture>
+                        <h4>Functional Adventure</h4>
+                        <h5><em>Haskell</em></h5>
+                        <p>Functional adventure is a text-based adventure game with the goal of traversing the map to find a specific item.</p>
+                    </a>
+                </div>
+                </div>
+            </div>
         </div>
-        <div class="projeto">
-            <h3>Projeto 2</h3>
-            <p>Descrição breve do projeto.</p>
+
+    </section>    
+    <section id="skills-section">
+        <h2>Habilidades</h2>
+        <div class="skills-container">
+            <i class="fa-brands fa-python"></i>
+            <i class="fa-brands fa-java"></i>
+            <i class="fa-brands fa-swift"></i>
+            <i class="fa-brands fa-figma"></i>
+            <i class="fa-brands fa-git-alt"></i>
+            <i class="fa-brands fa-github-alt"></i>
+            <i class="fa-solid fa-database"></i>
+            <i class="devicon-r-plain"></i>
+            <i class="devicon-c-plain-wordmark"></i>
         </div>
     </section>
-    <section id="contato">
-        <h2>Contato</h2>
-        <p>Email: isabelxis@gmail.com</p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/isabelxavier/">linkedin.com/in/isabelxavier</a></p>
-        <p>GitHub: <a href="https://github.com/isabelxis">github.com/isabelxis</a></p>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Contato</h2>
+            <p>Para contato, clique no botão abaixo</p>
+            <a href="mailto:isabelxis@gmail.com?subject=Inquiry&body=Olá Isabel,"
+               class="btn-custom">
+                Meu Contato
+            </a>
+        </div>
+        <div class="social-links">
+            <a href="https://www.instagram.com/isabelxis/" target="_blank">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/isabelxavier/" target="_blank">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/isabelxis" target="_blank">
+                <i class="fa-brands fa-github"></i>
+            </a>
+        </div>
     </section>
+
+    <!-- Swiper JS -->
     <footer>
-        <p>&copy; 2025 Isabel Xavier. Todos os direitos reservados.</p>
+        <p>&copy; <span id="year"></span> Isabel Xis. All Rights Reserved.</p>
     </footer>
-</body>
+    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // Automatically update the copyright year
+            document.getElementById('year').textContent = new Date().getFullYear();
+    
+            // Initialize Swiper
+            const swiper = new Swiper(".card-swiper", {
+                centeredSlides: false,
+                spaceBetween: 0,
+                slidesPerView: 'auto'
+            });
+        });
+    </script>
+  </body>
 </html>
